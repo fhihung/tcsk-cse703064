@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#header {
+  height: 46px;
+  width: 100%;
+  background-color: black;
+  position: fixed; /* gắn cố định */
+  top: 0;
+  z-index: 20;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav > li {
+  display: inline-block; /* in trên 1 hàng */
+}
+
+#nav li {
+  position: relative; /*  */
+}
+
+#nav li a {
+  color: white;
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+#nav > li:hover > a {
+  color: black;
+  background-color: #ccc;
+}
+
+#nav .sub-nav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* bóng mờ */
+}
+
+#nav .sub-nav li {
+  list-style: none;
+}
+
+#nav .sub-nav li a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  line-height: 38px;
+}
+
+#nav .sub-nav li:hover a {
+  color: black;
+  background-color: #ccc;
+}
+
+#nav li:hover .sub-nav {
+  display: block;
+}
+
+.ti-angle-down {
+  font-size: 14px;
+}
+#header .search {
+  float: right;
+  color: white;
+  font-size: 20px;
+  line-height: 46px;
+  padding: 0 20px;
+  cursor: pointer; /* css con trỏ */
+}
+
+#header .search:hover {
+  background-color: red;
+}
+
+#slider {
+  margin-top: 46px;
+  background: url("./img/slider/slider1.jpg");
+  background-position: top center;
+  background-size: cover; /* background full thẻ; // contain: giữ nguyên ảnh */
+  background-repeat: no-repeat;
+  padding-bottom: 50%;
+  position: relative;
+  z-index: 10;
+}
+.text-content {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+}
+.text {
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Segoe UI, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  margin: 10px 0;
+  letter-spacing: 10px;
+}
+
+#theMedia {
+  margin: 0 300px; /* cách lề */
+  padding: 64px 16px;
+  height: 700px;
+}
+.p1 {
+  margin: 20px 0;
+  text-align: center;
+  color: rgb(131, 126, 126);
+  font-style: italic;
+}
+.theMedia {
+  font-family: "Lato", sans-serif;
+  margin: 15px 0;
+  box-sizing: inherit; /* thừa kế chiều rộng và chiều cao của #themedia */
+  text-align: justify;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+#name {
+  margin-left: 30px;
+}
+.name {
+  width: 25%;
+  float: left;
+  margin: 0 30px;
+}
+.name1 {
+  padding: 30px 0 10px 0;
+  text-align: center;
+}
+.nameIMG {
+  box-sizing: inherit;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#tourDates {
+  padding: 64px 16px;
+  height: 860px;
+  background-color: black;
+}
+
+.month {
+  /* line-height: 40px; */
+  color: rgb(138, 137, 137);
+  padding: 0 10px;
+}
+
+.soldOut {
+  color: white;
+  background-color: red;
+  padding: 5px 7px;
+}
+
+#chooseMonth {
+  margin-top: 45px;
+}
+
+.right {
+  /* line-height: 40px; */
+  float: right;
+  color: white;
+  background-color: black;
+  padding: 3px 9px;
+  margin: 0 40px 5px 0;
+  border-radius: 15px;
+  display: flex;
+}
+
+.chooseMonth {
+  /* height: 40px; */
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(210, 205, 205);
+  padding: 8px 0;
+  background-color: white;
+  width: 800px;
+}
+
+.month:hover {
+  cursor: pointer;
+  color: rgb(129, 65, 65);
+}
+
+#chooseConcert {
+  padding-top: 30px;
+  margin-left: 330px;
+}
+
+.chooseConcert {
+  box-sizing: inherit;
+  background-color: white;
+  width: 255px;
+  float: left;
+  margin: 10px 10px;
+  height: 400px;
+}
+
+.tf {
+  box-sizing: inherit;
+  width: 255px;
+  height: 180px;
+}
+
+.tf:hover {
+  opacity: 0.8;
+}
+
+h4 {
+  padding: 20px 0 0 15px;
+}
+.day {
+  color: rgb(121, 120, 120);
+  padding: 20px 15px;
+}
+
+.cnt {
+  padding-left: 15px;
+}
+
+.buy {
+  color: white;
+  background-color: black;
+  margin: 20px 130px 10px 15px;
+  padding: 10px;
+  text-align: center;
+}
+.buy:hover,
+#send:hover {
+  cursor: pointer;
+  background-color: rgb(199, 196, 196);
+  color: black;
+  border: 1px solid rgb(199, 196, 196);
+  font-size: 15px;
+}
+
+#contact {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+#location {
+  padding-top: 20px;
+  width: 400px;
+  display: inline-block;
+}
+
+.loca {
+  font-size: 18px;
+  font-weight: 200;
+  padding: 10px 10px;
+  font-family: "Lato", sans-serif;
+}
+
+#information {
+  padding-top: 20px;
+  width: 400px;
+  float: right;
+}
+
+#nameI,
+#email {
+  font-size: 15px;
+  height: 35px;
+  width: 175px;
+  color: rgb(127, 124, 124);
+  padding-left: 10px;
+  margin: 0 10px 10px 0;
+  border: 1px solid rgb(194, 190, 190);
+}
+
+#message {
+  font-size: 15px;
+  padding-left: 10px;
+  height: 35px;
+  width: 363px;
+  color: rgb(127, 124, 124);
+  border: 1px solid rgb(194, 190, 190);
+}
+
+#send {
+  margin: 15px 0 0 293px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  width: 70px;
+  height: 40px;
+}
+
+#map {
+  width: 100%;
+}
+
+#footer {
+  background-color: #f1f1f1;
+  padding: 80px 5px 10px 5px;
+  height: 225px;
+  text-align: center;
+  color: rgb(91, 90, 90);
+  font-size: 22px;
+}
+.ti-facebook:hover,
+.ti-instagram:hover,
+.ti-linkedin:hover,
+.ti-linux:hover,
+.ti-pinterest-alt:hover,
+.ti-twitter:hover {
+  color: rgb(137, 136, 136);
+  cursor: pointer;
+}
+.hoai {
+  color: rgb(107, 106, 106);
+  font-size: 15px;
+  margin-top: 20px;
+}
