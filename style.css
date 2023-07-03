@@ -13,7 +13,7 @@ html {
   height: 46px;
   width: 100%;
   background-color: black;
-  position: fixed; /* gắn cố định */
+  position: fixed; 
   top: 0;
   z-index: 20;
 }
