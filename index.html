@@ -2,10 +2,16 @@
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Add this line -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add this line -->
     <title>LIBOW MEDIA</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
     <link rel="stylesheet" href="./themify-icons/themify-icons.css" />
     <!-- link icons -->
   </head>
@@ -49,7 +55,103 @@
             dolore rem exercitationem, est amet eum molestias enim quisquam
             saepe, reiciendis corporis!
           </p>
-          <div id="name">
+          <main>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--one">
+                  <div>
+                    <h2>Jellyfish</h2>
+                    <p>
+                      Jellyfish and sea jellies are the informal common names
+                      given to the medusa-phase of certain gelatinous members of
+                      the subphylum Medusozoa, a major part of the phylum
+                      Cnidaria.
+                    </p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Jellyfish"
+                      target="_blank"
+                      >explore</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--two">
+                  <div>
+                    <h2>Seahorse</h2>
+                    <p>
+                      Seahorses are mainly found in shallow tropical and
+                      temperate salt water throughout the world. They live in
+                      sheltered areas such as seagrass beds, estuaries, coral
+                      reefs, and mangroves. Four species are found in Pacific
+                      waters from North America to South America.
+                    </p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Seahorse"
+                      target="_blank"
+                      >explore</a
+                    >
+                  </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide--three">
+                  <div>
+                    <h2>octopus</h2>
+                    <p>
+                      Octopuses inhabit various regions of the ocean, including
+                      coral reefs, pelagic waters, and the seabed; some live in
+                      the intertidal zone and others at abyssal depths. Most
+                      species grow quickly, mature early, and are short-lived.
+                    </p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Octopus"
+                      target="_blank"
+                      >explore</a
+                    >
+                  </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide--four">
+                  <div>
+                    <h2>Shark</h2>
+                    <p>
+                      Sharks are a group of elasmobranch fish characterized by a
+                      cartilaginous skeleton, five to seven gill slits on the
+                      sides of the head, and pectoral fins that are not fused to
+                      the head.
+                    </p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Shark"
+                      target="_blank"
+                      >explore</a
+                    >
+                  </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide--five">
+                  <div>
+                    <h2>Dolphin</h2>
+                    <p>
+                      Dolphins are widespread. Most species prefer the warm
+                      waters of the tropic zones, but some, such as the right
+                      whale dolphin, prefer colder climates. Dolphins feed
+                      largely on fish and squid, but a few, such as the orca,
+                      feed on large mammals such as seals.
+                    </p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Dolphin"
+                      target="_blank"
+                      >explore</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </main>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+          <script src="./script.js"></script>
+
+          <!-- <div id="name">
             <div class="name">
               <p class="name1">Name</p>
               <img class="nameIMG" src="./img/content/name.jpg" alt="anh1" />
@@ -62,33 +164,9 @@
               <p class="name1">Jun</p>
               <img class="nameIMG" src="./img/content/new.jpg" alt="anh1" />
             </div>
-          </div>
+          </div> -->
         </div>
 
-        <div id="contact">
-          <!--Contact-->
-          <h2>Contact</h2>
-          <p class="p1">Contact</p>
-          <div id="location">
-            <p style="padding: 5px" class="ti-location-pin">
-              <span class="loca">HN,VN</span>
-            </p>
-            <p style="padding: 5px" class="ti-mobile">
-              <span class="loca">Phone: 12345678</span>
-            </p>
-            <p style="padding: 5px" class="ti-email">
-              <span class="loca">Email: mail@mail.com</span>
-            </p>
-          </div>
-          <div id="information">
-            <form>
-              <input id="nameI" type="text" placeholder="Name" />
-              <input id="email" type="text" placeholder="Email" /><br />
-              <input id="message" type="text" placeholder="Message" /><br />
-              <button id="send" type="button">SEND</button>
-            </form>
-          </div>
-        </div>
         <div>
           <img id="map" src="./img/content/hanoi.webp" alt="map" />
         </div>
