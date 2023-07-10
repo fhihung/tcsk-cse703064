@@ -1,19 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 #header {
   height: 46px;
   width: 100%;
-  background-color: black;
-  position: fixed; 
+  background-image: linear-gradient(45deg, #005baa, #000000);
+  position: fixed;
   top: 0;
   z-index: 20;
 }
@@ -92,7 +93,7 @@ html {
   margin-top: 46px;
   background: url("./img/slider/slider1.jpg");
   background-position: top center;
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 50%;
   position: relative;
@@ -142,100 +143,18 @@ h2 {
 h4 {
   padding: 20px 0 0 15px;
 }
-.day {
-  color: rgb(121, 120, 120);
-  padding: 20px 15px;
-}
 
-.cnt {
-  padding-left: 15px;
-}
-
-.buy {
-  color: white;
-  background-color: black;
-  margin: 20px 130px 10px 15px;
-  padding: 10px;
-  text-align: center;
-}
-.buy:hover,
-#send:hover {
-  cursor: pointer;
-  background-color: rgb(199, 196, 196);
-  color: black;
-  border: 1px solid rgb(199, 196, 196);
-  font-size: 15px;
-}
-
-#contact {
-  width: 800px;
-  height: 400px;
-  margin: 0 auto;
-  padding-top: 50px;
-}
-#location {
-  padding-top: 20px;
-  width: 400px;
-  display: inline-block;
-}
-
-.loca {
-  font-size: 18px;
-  font-weight: 200;
-  padding: 10px 10px;
-  font-family: "Lato", sans-serif;
-}
-
-#information {
-  padding-top: 20px;
-  width: 400px;
-  float: right;
-}
-
-#nameI,
-#email {
-  font-size: 15px;
-  height: 35px;
-  width: 175px;
-  color: rgb(127, 124, 124);
-  padding-left: 10px;
-  margin: 0 10px 10px 0;
-  border: 1px solid rgb(194, 190, 190);
-}
-
-#message {
-  font-size: 15px;
-  padding-left: 10px;
-  height: 35px;
-  width: 363px;
-  color: rgb(127, 124, 124);
-  border: 1px solid rgb(194, 190, 190);
-}
-
-#send {
-  margin: 15px 0 0 293px;
-  background-color: black;
-  color: white;
-  font-size: 15px;
-  width: 70px;
-  height: 40px;
-}
-
-#map {
-  width: 100%;
-  display: block;
-}
-
-#footer {position: fixed;
+#footer {
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   display: block;
-  background-color: #f1f1f1;
+  background-image: linear-gradient(45deg, #005baa, #000000);
   padding: 80px 5px 10px 5px;
-  height: 225px;
+  height: 180px;
   text-align: center;
-  color: rgb(91, 90, 90);
+  color: rgb(255, 255, 255);
   font-size: 22px;
 }
 .ti-facebook:hover,
@@ -247,44 +166,17 @@ h4 {
   color: rgb(137, 136, 136);
   cursor: pointer;
 }
-.hoai {
+.hai {
   color: rgb(107, 106, 106);
   font-size: 15px;
   margin-top: 20px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-
 main {
   position: relative;
-  width: calc(min(90rem, 90%));
   margin: 0 auto;
   min-height: 100vh;
-  column-gap: 3rem;
-  padding-block: min(20vh, 3rem);
-}
-
-.bg {
-  position: fixed;
-  top: -4rem;
-  left: -12rem;
-  z-index: -1;
-  opacity: 0;
-}
-
-.bg2 {
-  position: fixed;
-  bottom: -2rem;
-  right: -3rem;
-  z-index: -1;
-  width: 9.375rem;
-  opacity: 0;
+  margin: 10rem 10%;
 }
 
 main > div span {
@@ -299,7 +191,8 @@ main > div h1 {
   letter-spacing: 0.8px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+  font-size: 5rem;
+  /* font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem); */
   background-color: #005baa;
   background-image: linear-gradient(45deg, #005baa, #000000);
   background-size: 100%;
@@ -331,11 +224,9 @@ main a {
   font-weight: 500;
   background: #fff;
   border-radius: 3.125rem;
-  transition: 0.3s ease-in-out;
 }
 
 main > div > a {
-  border: 2px solid #c2c2c2;
   margin-top: 2.188rem;
   padding: 0.625rem 1.875rem;
 }
@@ -377,6 +268,7 @@ main > div > a:hover {
   margin-bottom: 0.625rem;
   padding: 0 0 0 1.563rem;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .swiper-slide p {
@@ -414,43 +306,31 @@ main > div > a:hover {
 }
 
 .swiper-slide--one {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("https://35mmstudio.vn/wp-content/uploads/2023/06/21-7.jpg") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://35mmstudio.vn/wp-content/uploads/2023/06/21-7.jpg") no-repeat
+      50% 50% / cover;
 }
 
 .swiper-slide--two {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("https://35mmstudio.vn/wp-content/uploads/2023/06/6-3.jpg") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://35mmstudio.vn/wp-content/uploads/2023/06/6-3.jpg") no-repeat
+      50% 50% / cover;
 }
 
 .swiper-slide--three {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("https://35mmstudio.vn/wp-content/uploads/2023/06/26-3.jpg") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://35mmstudio.vn/wp-content/uploads/2023/06/26-3.jpg") no-repeat
+      50% 50% / cover;
 }
 
 .swiper-slide--four {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("https://35mmstudio.vn/wp-content/uploads/2023/06/27-1.jpg") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://35mmstudio.vn/wp-content/uploads/2023/06/27-1.jpg") no-repeat
+      50% 50% / cover;
 }
 
 .swiper-slide--five {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("https://35mmstudio.vn/wp-content/uploads/2023/06/IMG_6402-scaled.jpg") no-repeat 50% 50%/cover;
-}
-
-.swiper-3d .swiper-slide-shadow-left,
-.swiper-3d .swiper-slide-shadow-right {
-  background-image: none;
-}
-
-@media screen and (min-width: 48rem) {
-  main {
-    display: block;
-    align-items: center;
-  }
-
-  .bg,
-.bg2 {
-    opacity: 0.1;
-  }
-}
-@media screen and (min-width: 93.75rem) {
-  .swiper {
-    width: 85%;
-  }
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://35mmstudio.vn/wp-content/uploads/2023/06/IMG_6402-scaled.jpg")
+      no-repeat 50% 50% / cover;
 }
