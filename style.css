@@ -92,7 +92,7 @@ html {
   margin-top: 46px;
   background: url("./img/slider/slider1.jpg");
   background-position: top center;
-  background-size: cover; /* background full tháº»; // contain: giá»¯ nguyÃªn áº£nh */
+  background-size: cover; 
   background-repeat: no-repeat;
   padding-bottom: 50%;
   position: relative;
@@ -137,89 +137,6 @@ h2 {
   text-align: justify;
   font-size: 15px;
   letter-spacing: 1px;
-}
-#name {
-  margin-left: 30px;
-}
-.name {
-  width: 25%;
-  float: left;
-  margin: 0 30px;
-}
-.name1 {
-  padding: 30px 0 10px 0;
-  text-align: center;
-}
-.nameIMG {
-  box-sizing: inherit;
-  width: 100%;
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.month {
-  /* line-height: 40px; */
-  color: rgb(138, 137, 137);
-  padding: 0 10px;
-}
-
-.soldOut {
-  color: white;
-  background-color: red;
-  padding: 5px 7px;
-}
-
-#chooseMonth {
-  margin-top: 45px;
-}
-
-.right {
-  /* line-height: 40px; */
-  float: right;
-  color: white;
-  background-color: black;
-  padding: 3px 9px;
-  margin: 0 40px 5px 0;
-  border-radius: 15px;
-  display: flex;
-}
-
-.chooseMonth {
-  /* height: 40px; */
-  margin: 0 auto;
-  border-bottom: 1px solid rgb(210, 205, 205);
-  padding: 8px 0;
-  background-color: white;
-  width: 800px;
-}
-
-.month:hover {
-  cursor: pointer;
-  color: rgb(129, 65, 65);
-}
-
-#chooseConcert {
-  padding-top: 30px;
-  margin-left: 330px;
-}
-
-.chooseConcert {
-  box-sizing: inherit;
-  background-color: white;
-  width: 255px;
-  float: left;
-  margin: 10px 10px;
-  height: 400px;
-}
-
-.tf {
-  box-sizing: inherit;
-  width: 255px;
-  height: 180px;
-}
-
-.tf:hover {
-  opacity: 0.8;
 }
 
 h4 {
