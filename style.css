@@ -6,10 +6,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-html {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 #header {
   height: 46px;
   width: 100%;
@@ -20,11 +16,17 @@ html {
 }
 
 #nav {
-  display: inline-block;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 50%;
 }
 
 #nav > li {
-  display: inline-block; /* in trÃªn 1 hÃ ng */
+  display: inline-block;
+  margin-right: 10px;
 }
 
 #nav li {
@@ -35,10 +37,10 @@ html {
   color: white;
   text-decoration: none;
   line-height: 46px;
-  padding: 0 24px;
-  display: inline-block;
   text-transform: uppercase;
   font-size: 15px;
+  display: inline-block;
+  padding: 0 8px;
 }
 
 #nav > li:hover > a {
@@ -50,7 +52,8 @@ html {
   display: none;
   position: absolute;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* bÃ³ng má» */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* bóng mờ */
 }
 
 #nav .sub-nav li {
@@ -76,19 +79,35 @@ html {
 .ti-angle-down {
   font-size: 14px;
 }
-#header .search {
-  float: right;
-  color: white;
-  font-size: 20px;
-  line-height: 46px;
-  padding: 0 20px;
-  cursor: pointer; /* css con trá» */
-}
+@media only screen and (max-width: 840px) {
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+  }
 
-#header .search:hover {
-  background-color: red;
-}
+  /* #nav > li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 
+  #nav li {
+    display: block;
+  }
+
+  #nav .sub-nav {
+    position: static;
+    display: block;
+    box-shadow: none;
+    margin-left: 20px;
+  }
+
+  #nav .sub-nav li {
+    margin-bottom: 5px;
+  } */
+}
 #slider {
   margin-top: 46px;
   background: url("./img/slider/slider1.jpg");
@@ -120,32 +139,18 @@ h2 {
   letter-spacing: 10px;
 }
 
-#theMedia {
-  margin: 0 300px; /* cÃ¡ch lá» */
-  padding: 64px 16px;
-  height: 700px;
-}
 .p1 {
   margin: 20px 0;
   text-align: center;
   color: rgb(131, 126, 126);
   font-style: italic;
 }
-.theMedia {
-  font-family: "Lato", sans-serif;
-  margin: 15px 0;
-  box-sizing: inherit;
-  text-align: justify;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
-
 h4 {
   padding: 20px 0 0 15px;
 }
 
 #footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -166,16 +171,10 @@ h4 {
   color: rgb(137, 136, 136);
   cursor: pointer;
 }
-.hai {
-  color: rgb(107, 106, 106);
-  font-size: 15px;
-  margin-top: 20px;
-}
 
 main {
   position: relative;
-  margin: 0 auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 10rem 10%;
 }
 
