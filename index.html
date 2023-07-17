@@ -1,48 +1,57 @@
-<!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Playfair Display"
-    />
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Add this line -->
-    <title>LIBOW MEDIA</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./themify-icons/themify-icons.css" />
-    <!-- link icons -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css" />
+    <title>Document</title>
   </head>
-
   <body>
-    <div id="main">
-      <div id="header">
-        <!--begin nav-->
-        <!--  -->
-        <ul id="nav">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./fotos/index.html">Media</a></li>
-          <li><a href="./videos/index.html">Video</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="./contact/contact.html">Contact</a></li>
-          <!-- <li>
-            <a href="">
-              More
-              <i class="ti-angle-down"></i>
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1><span>L</span>ibow <span>M</span>edia</h1>
             </a>
-            <ul class="sub-nav">
-              <li><a href="">Image</a></li>
-              <li><a href="">Media</a></li>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li>
+                <a href="../photos/index.html" data-after="Photos">Photos</a>
+              </li>
+              <li><a href="#videos" data-after="Projects">videos</a></li>
+              <li>
+                <a href="../about/index.html" data-after="About">About</a>
+              </li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
             </ul>
-          </li> -->
-        </ul>
+          </div>
+        </div>
       </div>
-      <main>
+    </section>
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Welcome to LIBOW Media<span></span></h1>
+
+          <a href="#services" type="button" class="cta">Explore</a>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <span id="trans">a</span>
+      <div class="img-slide">
         <div>
           <div>
             <span>Discover</span>
@@ -134,18 +143,17 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-      </main>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-      <script src="./script.js"></script>
-
-      <div id="footer">
-        <i class="ti-facebook"></i>
-        <i class="ti-instagram"></i>
-        <i class="ti-pinterest-alt"></i>
-        <i class="ti-twitter"></i>
-        <p></p>
-        <br /><br />
       </div>
-    </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+      <script src="../script.js"></script>
+    </section>
+    <footer>
+      <i class="ti-facebook"></i>
+      <i class="ti-instagram"></i>
+      <i class="ti-pinterest-alt"></i>
+      <i class="ti-twitter"></i>
+      <p></p>
+      <br /><br />
+    </footer>
   </body>
 </html>

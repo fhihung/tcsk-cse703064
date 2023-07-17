@@ -12,20 +12,33 @@ var swiper = new Swiper(".swiper", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true
+    clickable: true,
   },
   breakpoints: {
     640: {
-      slidesPerView: 1
+      slidesPerView: 1,
     },
     768: {
-      slidesPerView: 1
+      slidesPerView: 1,
     },
     1024: {
-      slidesPerView: 2
+      slidesPerView: 2,
     },
     1560: {
-      slidesPerView: 3
-    }
+      slidesPerView: 3,
+    },
+  },
+});
+document.addEventListener("scroll", () => {
+  var scroll_position = window.scrollY;
+  if (scroll_position > 250) {
+    header.style.backgroundColor = "#29323c";
+  } else {
+    header.style.backgroundColor = "transparent";
   }
+});
+
+
+$(document).ready(function () {
+  $(".fade-in").addClass("animate__animated animate__fadeIn");
 });
