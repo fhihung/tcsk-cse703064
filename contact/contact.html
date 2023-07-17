@@ -1,60 +1,118 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./contact.css" />
-  </head>
-  <body>
-    <div id="header">
-      <!--begin nav-->
-      <ul id="nav">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#theMedia">Media</a></li>
-        <li><a href="#videos">Video</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li>
-          <a href="">
-            More
-            <i class="ti-angle-down"></i>
-          </a>
-          <ul class="sub-nav">
-            <li><a href="">Photography</a></li>
-            <li><a href="">Image</a></li>
-            <li><a href="">Media</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!--end nav-->
-      <!--begin search-->
-      <div class="search">
-        <i class="ti-search"></i>
-      </div>
-      <!--end search-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="header">
+    <!--begin nav-->
+    <ul id="nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#theMedia">Media</a></li>
+      <li><a href="#videos">Video</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li>
+        <a href="">
+          More
+          <i class="ti-angle-down"></i>
+        </a>
+        <ul class="sub-nav">
+          <li><a href="">Photography</a></li>
+          <li><a href="">Image</a></li>
+          <li><a href="">Media</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!--end nav-->
+    <!--begin search-->
+    <div class="search">
+      <i class="ti-search"></i>
     </div>
-    <div id="contact">
-      <!--Contact-->
-      <h2>Contact</h2>
-      <p class="p1">Fan? Drop a note!</p>
-      <div id="location">
-        <p style="padding: 5px" class="ti-location-pin">
-          <span class="loca">Chicago, US</span>
+    <!--end search-->
+  </div>
+  <footer id="footer">
+    <section>
+      <form method="post" action="https://hugo-theme-massively.netlify.app/post-action">
+        <div class="fields">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="3"></textarea>
+          </div>
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="Send A Message"></li>
+        </ul>
+      </form>
+    </section>
+
+    <section class="split contact">
+
+      <section class="alt">
+        <h3>Địa chỉ</h3>
+        <p>
+
+          Đại học Phenikaa
+
+          <br> Hà Đông, Hà Nội, Việt Nam
+
         </p>
-        <p style="padding: 5px" class="ti-mobile">
-          <span class="loca">Phone: +00 151515</span>
-        </p>
-        <p style="padding: 5px" class="ti-email">
-          <span class="loca">Email: mail@mail.com</span>
-        </p>
-      </div>
-      <div id="information">
-        <form>
-          <input id="nameI" type="text" placeholder="Name" />
-          <input id="email" type="text" placeholder="Email" /><br />
-          <input id="message" type="text" placeholder="Message" /><br />
-          <button id="send" type="button">SEND</button>
-        </form>
-      </div>
-    </div>
-  </body>
+      </section>
+
+
+      <section>
+        <h3>Số điện thoại</h3>
+        <p><a href="tel:%20091%29%20234-5678">(091) 234-5678</a></p>
+      </section>
+
+
+      <section>
+        <h3>Email</h3>
+        <p><a href="mailto:hehehe@gmail.com">hehehe@gmail.com</a></p>
+      </section>
+
+
+      <section>
+        <h3>Social</h3>
+        <ul class="icons alt">
+          <li><a href="https://twitter.com/" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+
+          <li><a href="https://facebook.com/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+
+          <li><a href="https://instagram.com/" class="icon alt fa-instagram"><span class="label">Instagram</span></a>
+          </li>
+
+          <li><a href="https://www.linkedin.com/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a>
+          </li>
+
+          <li><a href="https://github.com/" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+
+          <li><a href="https://youtube.com/" class="icon alt fa-youtube"><span class="label">Youtube</span></a></li>
+
+          <li><a href="https://plus.google.com/" class="icon alt fa-google-plus"><span class="label">Google
+                Plus</span></a></li>
+
+          <li><a href="https://last.fm/" class="icon alt fa-lastfm"><span class="label">Last.fm</span></a></li>
+
+          <li><a href="https://flickr.com/" class="icon alt fa-flickr"><span class="label">Flickr</span></a></li>
+
+        </ul>
+      </section>
+
+    </section>
+  </footer>
+</body>
+
 </html>
