@@ -9,6 +9,7 @@ document.addEventListener("scroll", () => {
         brandName.style.display = "block";
     }
 });
+// menu click
 const menuButtons = Array.from(document.querySelectorAll('.menu-sub-title'));
 const menuViews = Array.from(document.querySelectorAll('.menu-content'));
 let activeIndex = 0;
@@ -17,6 +18,7 @@ menuButtons.forEach((button, _, arr) => {
     button.onclick = (event) => {
         handleActiveMenu(event.target);
         handleActiveMenuView(activeIndex);
+        scrollToSection();
     }
 })
 
@@ -41,4 +43,9 @@ function handleActiveMenuView(activeIndex) {
             menu.style.display = 'none';
         }
     })
-} 
+}
+
+function scrollToSection() {
+    const section = document.getElementById('menu');
+    section.scrollIntoView({ behavior: 'smooth' });
+}

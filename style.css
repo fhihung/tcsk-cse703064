@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 .container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -191,7 +191,6 @@ p {
 }
 #slider {
   margin-top: 46px;
-  background: url("./img/slider/slider1.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -391,86 +390,169 @@ h4 {
     url("https://35mmstudio.vn/wp-content/uploads/2023/06/IMG_6402-scaled.jpg")
       no-repeat 50% 50% / cover;
 }
-/* End Services */
 
-/* Media Query For Desktop */
-/* @media screen and (max-width: 880px) {
-  #header .nav-list ul li a {
-    font-size: 1.2rem;
-  }
-  #header .nav-list ul a {
-    letter-spacing: 0.03rem;
-
-    padding: 16px;
-  }
+/* Footer  */
+.main-footer {
+  background-color: #29323c;
 }
-@media screen and (max-width: 830px) {
-  #header .nav-list ul li a {
-    font-size: 1rem;
-  }
-  #header .nav-list ul a {
-    letter-spacing: 0.01rem;
 
-    padding: 14px;
-  }
+.footer {
+  background-color: #29323c;
+  padding: 30px 0px;
+  max-width: 1200px;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
 }
-@media screen and (max-width: 770px) {
-  #header .nav-list ul li a {
-    font-size: 0.6rem;
-  }
-  #header .nav-list ul a {
-    letter-spacing: 0.01rem;
-
-    padding: 10px;
-  }
+.footer-header {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0px 0px 20px;
+  display: flex;
 }
-@media screen and (max-width: 724px) {
-  .brand h1 {
-    margin: 0 20px;
-  }
-} */
-
-/* header */
-
-/* #header .nav-list ul {
-  position: initial;
-  display: block;
-  height: auto;
-  width: fit-content;
-  background-color: transparent;
-  transition: 0.5s ease left;
-} */
-/* #header .nav-list ul li {
-  display: inline-block;
+.footer-heading {
+  width: 49%;
+  padding: 0px 15px;
 }
-#header .nav-list ul li a {
-  font-size: 1.8rem;
-} */
+.footer-heading-container {
+  float: right;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
 
-/* End header */
-
-/* End  Media Query For Desktop */
-
-/* Footer */
-footer {
+.footer-heading-a {
+  display: flex;
+  height: 24px;
   position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: block;
-  background-color: rgb(31, 30, 30);
-  padding: 80px 5px 10px 5px;
-  height: 180px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 22px;
 }
-.ti-facebook:hover,
-.ti-instagram:hover,
-.ti-linkedin:hover,
-.ti-linux:hover,
-.ti-pinterest-alt:hover,
-.ti-twitter:hover {
-  color: rgb(137, 136, 136);
+
+.icon {
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease-out;
+  font-size: 20px;
+  position: absolute;
+}
+
+.footer-heading-h {
+  position: absolute;
+  left: 30px;
+  font-weight: 500;
+}
+
+.footer-heading-c {
+  margin: 5px;
+}
+
+.footer-heading-container:hover {
+  color: #ce0021;
+}
+
+.footer-heading-container:hover .icon {
+  font-size: 24px;
+  left: -10px;
+  top: -6px;
+}
+.fl-l {
+  padding: 0px 15px;
+  float: left;
+  border-left: 1px solid #e0e0e0;
+}
+.footer-container {
+  display: flex;
+}
+.footer-container-left {
+  width: 66%;
+  display: flex;
+}
+.container-bottom {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px;
+}
+
+.container-h {
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container-items {
+  font-style: 15px;
+  color: #fff;
+  padding: 5px 0px;
+}
+
+.container-items:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.container:last-child {
+  width: 50%;
+}
+.footer-container-right {
+  width: 33%;
+  float: right;
+  margin: 40px 15px;
+  border-left: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  gap: 10px;
+}
+.phone-number {
+  margin: 0px 0px 5px;
+  font-size: 24px;
+  color: #e44f4f;
+  font-weight: 400;
+}
+.icon {
+  margin: 0px 5px;
+  font-size: 14px;
+}
+
+.socials-contact {
+  display: flex;
+}
+
+.socials-items {
+  background-color: #fff;
+  margin: 0px 8px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  font-size: 20px;
+  margin: 7px;
+}
+.main-footer
+  .footer
+  .footer-container
+  .footer-container-right
+  .socials-contact
+  .socials-items:hover {
+  background-color: #e44f4f;
+}
+.main-footer
+  .footer
+  .footer-container
+  .footer-container-right
+  .socials-contact
+  .socials-items:hover
+  .social-icon {
+  color: #fff;
   cursor: pointer;
 }
