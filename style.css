@@ -11,8 +11,8 @@ html {
 a {
   text-decoration: none;
 }
-.container {
-  /* min-height: 100vh; */
+.containers {
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -138,6 +138,12 @@ p {
 #header .nav-list ul li a {
   font-size: 1.8rem;
 }
+/* Responsive Header  */
+@media screen and (max-width: 528px) {
+  .brand {
+    display: none;
+  }
+}
 /* End Header section */
 
 /* Hero Section */
@@ -145,6 +151,7 @@ p {
   background-image: url(https://35mmstudio.vn/wp-content/uploads/2020/02/about-us.jpg);
   background-size: cover;
   background-position: top center;
+  height: 100vh;
   position: relative;
   z-index: 1;
 }
@@ -164,6 +171,9 @@ p {
   margin: 0 auto;
   padding: 0 50px;
   justify-content: flex-start;
+  position: absolute;
+  bottom: 45vh;
+  left: 10vw;
 }
 #hero h1 {
   display: block;
