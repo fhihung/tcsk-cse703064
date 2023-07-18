@@ -167,6 +167,7 @@ p {
 }
 #hero h1 {
   display: block;
+  width: -moz-fit-content;
   width: fit-content;
   font-size: 4rem;
   position: relative;

@@ -37,7 +37,3 @@ document.addEventListener("scroll", () => {
     header.style.backgroundColor = "transparent";
   }
 });
-
-$(document).ready(function () {
-  $(".fade-in").addClass("animate__animated animate__fadeIn");
-});
