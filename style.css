@@ -139,7 +139,7 @@ p {
   font-size: 1.8rem;
 }
 /* Responsive Header  */
-@media screen and (max-width: 528px) {
+@media screen and (max-width: 885px) {
   .brand {
     display: none;
   }
@@ -242,13 +242,13 @@ h4 {
 .img-slide {
   position: relative;
   /* min-height: 100vh; */
-  margin: 10rem 10%;
+  margin: 6rem 10% 10rem 10%;
 }
 
 .img-slide > div span {
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-size: 1rem;
+  font-size: 2.3rem;
   color: #717171;
 }
 
@@ -257,7 +257,7 @@ h4 {
   letter-spacing: 0.8px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 6rem;
   /* font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem); */
   background-color: #005baa;
   background-image: linear-gradient(45deg, #005baa, #000000);
@@ -280,6 +280,8 @@ h4 {
 
 .img-slide > div p {
   line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
 .img-slide a {
@@ -302,9 +304,17 @@ h4 {
   color: #005baa;
 }
 
+#services {
+  margin-bottom: 5vh;
+  height: 100vh;
+}
+.swiper {
+  height: 70vh;
+}
 .swiper {
   width: 100%;
   padding-top: 3.125rem;
+  /* padding: 0 3rem; */
 }
 
 .swiper-pagination-bullet,
@@ -501,9 +511,6 @@ h4 {
   color: #ff0000;
 }
 
-.container:last-child {
-  width: 50%;
-}
 .footer-container-right {
   width: 33%;
   float: right;
