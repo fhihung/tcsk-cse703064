@@ -70,6 +70,7 @@ p {
 
 /* Header section */
 #header {
+  text-align: center;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -93,7 +94,8 @@ p {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: rgb(31, 30, 30);
+
+  background-color: transparent;
   width: 100vw;
   height: 100vh;
   left: 100%;
@@ -122,7 +124,20 @@ p {
 #header .nav-list ul li:hover a {
   color: crimson;
 }
-
+#header .nav-list ul {
+  position: initial;
+  display: block;
+  height: auto;
+  width: fit-content;
+  background-color: transparent;
+  transition: 0.5s ease left;
+}
+#header .nav-list ul li {
+  display: inline-block;
+}
+#header .nav-list ul li a {
+  font-size: 1.8rem;
+}
 /* End Header section */
 
 /* Hero Section */
@@ -378,23 +393,58 @@ h4 {
 /* End Services */
 
 /* Media Query For Desktop */
+/* @media screen and (max-width: 880px) {
+  #header .nav-list ul li a {
+    font-size: 1.2rem;
+  }
+  #header .nav-list ul a {
+    letter-spacing: 0.03rem;
+
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 830px) {
+  #header .nav-list ul li a {
+    font-size: 1rem;
+  }
+  #header .nav-list ul a {
+    letter-spacing: 0.01rem;
+
+    padding: 14px;
+  }
+}
+@media screen and (max-width: 770px) {
+  #header .nav-list ul li a {
+    font-size: 0.6rem;
+  }
+  #header .nav-list ul a {
+    letter-spacing: 0.01rem;
+
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 724px) {
+  .brand h1 {
+    margin: 0 20px;
+  }
+} */
 
 /* header */
 
-#header .nav-list ul {
+/* #header .nav-list ul {
   position: initial;
   display: block;
   height: auto;
   width: fit-content;
   background-color: transparent;
   transition: 0.5s ease left;
-}
-#header .nav-list ul li {
+} */
+/* #header .nav-list ul li {
   display: inline-block;
 }
 #header .nav-list ul li a {
   font-size: 1.8rem;
-}
+} */
 
 /* End header */
 

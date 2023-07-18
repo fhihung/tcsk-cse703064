@@ -7,7 +7,7 @@ var swiper = new Swiper(".swiper", {
     stretch: 0,
     depth: 100,
     modifier: 3,
-    // slideShadows: true
+
   },
   loop: true,
   pagination: {
@@ -37,7 +37,6 @@ document.addEventListener("scroll", () => {
     header.style.backgroundColor = "transparent";
   }
 });
-
 
 $(document).ready(function () {
   $(".fade-in").addClass("animate__animated animate__fadeIn");
