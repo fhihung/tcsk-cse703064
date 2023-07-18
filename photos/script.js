@@ -10,31 +10,44 @@ document.addEventListener("scroll", () => {
     }
 });
 // menu click
+// Lấy danh sách các nút menu và phần nội dung tương ứng
 const menuButtons = Array.from(document.querySelectorAll('.menu-sub-title'));
 const menuViews = Array.from(document.querySelectorAll('.menu-content'));
+
+// Chỉ mục của nút menu đang được chọn
 let activeIndex = 0;
 
-menuButtons.forEach((button, _, arr) => {
+// Gán sự kiện onclick cho mỗi nút menu
+menuButtons.forEach((button, index) => {
     button.onclick = (event) => {
+        // Xử lý nút menu được nhấp vào
         handleActiveMenu(event.target);
+        // Hiển thị phần nội dung tương ứng với nút menu được chọn
         handleActiveMenuView(activeIndex);
+        // Cuộn trang web đến phần menu
         scrollToSection();
-    }
-})
+    };
+});
 
-function handleActiveMenu(el) {
-    const name = el.innerText.toLowerCase();
-    menuButtons.forEach((target, index) => {
-        if (name === target.innerText.toLowerCase()) {
-            target.classList.add('active');
+// Xử lý nút menu được nhấp vào
+function handleActiveMenu(clickedButton) {
+    const clickedButtonName = clickedButton.innerText.toLowerCase();
+
+    menuButtons.forEach((button, index) => {
+        const buttonName = button.innerText.toLowerCase();
+
+        if (clickedButtonName === buttonName) {
+            // Đánh dấu nút menu là hoạt động
+            button.classList.add('active');
+            // Cập nhật chỉ mục nút menu đang được chọn
             activeIndex = index;
+        } else {
+            button.classList.remove('active');
         }
-        else {
-            target.classList.remove('active');
-        }
-    })
+    });
 }
 
+// Hiển thị phần nội dung tương ứng với nút menu được chọn
 function handleActiveMenuView(activeIndex) {
     menuViews.forEach((menu, index) => {
         if (activeIndex === index) {
@@ -42,9 +55,10 @@ function handleActiveMenuView(activeIndex) {
         } else {
             menu.style.display = 'none';
         }
-    })
+    });
 }
 
+// Cuộn trang web đến phần menu
 function scrollToSection() {
     const section = document.getElementById('menu');
     section.scrollIntoView({ behavior: 'smooth' });
