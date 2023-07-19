@@ -77,24 +77,24 @@ section .bg .clip-text {
 }
 
 .first .bg {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("/img/film/IMG_0516.JPG");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("IMG_0516.JPG");
 }
 
 .second .bg {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("/img/film/IMG_1390.JPG");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("IMG_1390.JPG");
   
 }
 
 .third .bg {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("/img/film/DSC01418.JPG");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("DSC01418.JPG");
 }
 
 .fourth .bg {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("/img/film/IMG_0509.JPG");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("IMG_0509.JPG");
 }
 
 .fifth .bg {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("/img/film/7CD69997-A89F-48A4-BC99-E50AB01CC852_2.gif");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("7CD69997-A89F-48A4-BC99-E50AB01CC852_2.gif");
   background-position: 50% 45%;
 }
 
